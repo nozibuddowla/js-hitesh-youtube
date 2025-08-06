@@ -71,10 +71,45 @@ const users = [
 ];
 
 users[2].email;
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+
+
+const course = {
+    id: 101,
+    courseName: "JavaScript for Beginners",
+    courseInstructor: "Jane Doe",
+    duration: "6 weeks",
+    price: 99.99,
+    isActive: true,
+    tags: ["JavaScript", "Programming", "Web Development"],
+    syllabus: [
+        "Introduction to JavaScript",
+        "Variables and Data Types",
+        "Functions and Scope",
+        "DOM Manipulation",
+        "Events and Event Handling",
+        "Asynchronous JavaScript"
+    ],
+    studentsEnrolled: 120,
+    rating: 4.7
+};
+
+// const {courseInstructor} = course;
+const {courseInstructor: instructor} = course;
+console.log(instructor);
+
+
+const navbar = ({company}) => {};
+
+navbar({company: "Google"});
+
+console.log(navbar);
+
+
