@@ -16,15 +16,35 @@ function sayMyName() {
 // console.log(result);
 
 
-function loginUserMessage(username = "sam") {
-    if (!username) {
-        console.log(`Please enter a username`);
-        return
-    } else {
-        return `Welcome, ${username}`;
-    }
+// function loginUserMessage(username = "sam") {
+//     if (!username) {
+//         console.log(`Please enter a username`);
+//         return
+//     } else {
+//         return `Welcome, ${username}`;
+//     }
     
+// }
+
+// console.log(loginUserMessage("hitesh"));
+
+
+const user = {
+    username: "hitesh",
+    price: 199
 }
 
-// console.log(loginUserMessage("hitesh!"));
-console.log(loginUserMessage("hitesh"));
+// function handleObject(anyObject) {
+//     console.log(`User name is ${anyObject.username} and price is ${anyObject.price}`);
+    
+// }
+// // handleObject(user);
+// handleObject({username: "kullu", price: 398});
+
+const myNewArray = [200, 400, 10, 6000];
+
+function returnSecondValue(getArray) {
+    return getArray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
